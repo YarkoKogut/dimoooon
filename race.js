@@ -43,7 +43,7 @@
     {
       id: 'xf',
       name: 'Jaguar XF',
-      spec: '3.0 V6 supercharged · 340 hp',
+      spec: '5.0 V8 · 385 hp',
       tagline: 'British luxury. Smells like leather.',
       look: { color: '#2f5a45', len: 74, cabin: [0.34, 0.74] },
       speed: 640,
@@ -60,7 +60,7 @@
     {
       id: 'disco',
       name: 'Land Rover Discovery',
-      spec: '3.0 V6 diesel · 256 hp',
+      spec: '5.0 V8 · 375 hp',
       tagline: 'Go anywhere. Allegedly.',
       look: { color: '#d8d0bf', len: 76, w: 44, cabin: [0.24, 0.93], boxy: true },
       speed: 620,
