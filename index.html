@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>DIMOOOON — the race</title>
+    <meta name="description" content="Pick a car and overtake 10 cars. What could possibly go wrong?" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏎️</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section id="select-view" class="select-view">
+        <header class="hero">
+          <h1 class="logo">DIMOOOON</h1>
+          <p class="sub">The most realistic racing game ever. Overtake <b>10 cars</b> to win.</p>
+          <h2 class="pick">Choose your car</h2>
+        </header>
+        <div id="cars" class="cars"></div>
+        <p class="footnote">* according to the seller</p>
+      </section>
+
+      <section id="race-view" class="race-view" hidden>
+        <header class="race-top">
+          <button id="back-btn" class="ghost-btn" type="button">← Cars</button>
+          <h1 class="logo small">DIMOOOON</h1>
+          <span id="car-name" class="car-name"></span>
+        </header>
+        <div class="stage">
+          <canvas id="game"></canvas>
+          <button id="tune-btn" class="tune-btn" type="button" hidden>🔧 Install downpipes</button>
+          <div id="result" class="overlay" hidden>
+            <div class="card">
+              <div id="result-emoji" class="result-emoji"></div>
+              <h2 id="result-title"></h2>
+              <p id="result-text" class="result-text"></p>
+              <p id="result-stats" class="result-stats"></p>
+              <div class="actions">
+                <button id="again-btn" class="big-btn" type="button">🔄 Race again</button>
+                <button id="cars-btn" class="ghost-btn" type="button">🚗 Choose another car</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="touch">
+          <button class="touch-btn" type="button" data-dir="left">◀</button>
+          <button class="touch-btn" type="button" data-dir="right">▶</button>
+        </div>
+        <p class="hint">Steer with <kbd>←</kbd> <kbd>→</kbd></p>
+      </section>
+    </main>
+    <script src="race.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>
