@@ -41,11 +41,11 @@
       },
     },
     {
-      id: 'xj',
-      name: 'Jaguar XJ',
-      spec: '5.0 V8 · 385 hp',
+      id: 'xf',
+      name: 'Jaguar XF',
+      spec: '3.0 V6 supercharged · 340 hp',
       tagline: 'British luxury. Smells like leather.',
-      look: { color: '#2f5a45', len: 78, cabin: [0.33, 0.73] },
+      look: { color: '#2f5a45', len: 74, cabin: [0.34, 0.74] },
       speed: 640,
       breaks: {
         after: 2,
